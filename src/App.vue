@@ -30,30 +30,34 @@
 
         <!--Menu Navegação-->
         <nav class="flex items-center justify-center bg-whtie border-b-4 text-xs">
-          <div class="flex space-x-4">
-              <a href="#" class="text-[#15104B] hover:text-gray-600">Bicicleta KRW</a>
-              <a href="#" class="text-gray-800 hover:text-gray-600">Quadros KRW</a>
-              <a href="#" class="text-gray-800 hover:text-gray-600">Bicicletas</a>
-              <a href="#" class="text-gray-800 hover:text-gray-600">Ofertas</a>
-              <a href="#" class="text-gray-800 hover:text-gray-600">Categorias</a>
-          </div>
-          <button class="px-11 py-2 bg-[#252F97] text-white rounded ml-20">OFERTAS IMPERDIVEIS</button>
+            <div class="flex space-x-4">
+                <a href="#" class="text-[#15104B] hover:text-gray-600">Bicicleta KRW</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Quadros KRW</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Bicicletas</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Ofertas</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Categorias</a>
+            </div>
+            <button class="items-start px-11 py-2 bg-[#252F97] text-white rounded ml-20">OFERTAS IMPERDIVEIS</button>
         </nav>
-
-
+        
+        
+        <!--Informações-->
         <Infos />
-
-
+        
+        
+        <!--Pagina-->
         <div class="flex">
+            <!--Lado Esquerdo-->
             <div class="w-1/2 px-8">
                 <Carrossel />
             </div>
-
-
+            
+            
+            <!--Lado Direito-->
             <div class="w-1/2 px-8">
-                <h1 class="text-lg">Bicicleta de aluminio aro 29 KSW Shimano TZ Vel Ltx KRW20</h1>
+                <h1 class="text-lg mb-4">{{tituloProduto}}</h1>
                 <p class="text-xs">Tamanho do quadro</p>
-                <div id="quadrosBike" class="flex items-ceneter justify-right space-x-2">
+                <div id="quadrosBike" class="flex items-center justify-right space-x-2 mb-4">
                   <div class="border-black border-[0.5px] rounded text-xs w-8 p-1 text-center">
                       15,5'
                   </div>
@@ -68,9 +72,13 @@
                   </div>
                 </div>
                 <CorBike />
-                <FormaPagamento />
+                <FormaPagamento :image="'/images.png'" :titulo="'Cartão de Crédito'" :condicao="'Parcela'" :opcao="true"/>
+                <FormaPagamento :image="'/pix-foto-site-1.png'" :titulo="'Pix'" :condicao="'Parcela'" :opcao="true"/>
+                <FormaPagamento :image="'/image 55.png'" :titulo="'Boleto'" :condicao="'R$2.999,00'"/>
+                <FormaPagamento :image="'/mercadopago.png'" :titulo="'Mercado Pago'" :condicao="'R$2.999,00'"/>
+                <button class="justify-start px-11 py-2 bg-[#000000] text-white rounded mt-4">COMPRAR AGORA</button>
             </div>
-          </div>
+        </div>
 
     </div>
 </template>
@@ -86,4 +94,5 @@
     const aviso = ref("Este mês estaremos com descontos de até 40%")
     const cliente = ref("Daniel")
 
+    const tituloProduto = ref("Bicicleta de aluminio aro 29 KSW Shimano TZ Vel Ltx KRW20")
 </script>
