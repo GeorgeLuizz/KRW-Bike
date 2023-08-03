@@ -58,20 +58,7 @@
                 <h1 class="text-lg ">{{tituloProduto}}</h1>
                 <img class="w-[100px] mb-4" src="/stars.png">
                 <p class="text-xs">Tamanho do quadro</p>
-                <div id="quadrosBike" class="flex items-center justify-right space-x-2 mb-4">
-                  <div class="border-black border-[0.5px] rounded text-xs w-8 p-1 text-center">
-                      15,5'
-                  </div>
-                  <div class="border-black border-[0.5px] rounded text-xs w-8 p-1 text-center">
-                      17'
-                  </div>
-                  <div class="border-black border-[0.5px] rounded text-xs w-8 p-1 text-center">
-                      19'
-                  </div>
-                  <div class="border-black border-[0.5px] rounded text-xs w-8 p-1 text-center">
-                      21'
-                  </div>
-                </div>
+                <TamanhoQuadro/>
                 <CorBike />
                 <FormaPagamento :image="'/images.png'" :titulo="'Cartão de Crédito'" :condicao="'Parcela'" :opcao="true"/>
                 <FormaPagamento :image="'/pix-foto-site-1.png'" :titulo="'Pix'" :condicao="'Parcela'" :opcao="true"/>
@@ -87,6 +74,7 @@
 
     import Infos from './components/Infos.vue'
     import Carrossel from './components/Carrossel.vue'
+    import TamanhoQuadro from './components/TamanhoQuadro.vue'
     import CorBike from './components/CorBike.vue'
     import FormaPagamento from './components/FormaPagamento.vue'
 

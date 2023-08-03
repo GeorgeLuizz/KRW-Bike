@@ -1,4 +1,5 @@
 <template>
+    <p class="text-xs">Escolha a Cor</p>
     <div class="flex justify-start space-x-1 items-center mb-4">
         <div v-for="(slide, ind) in images" :key="ind" @click="selecionarCor(ind)" class="border-[1px] border-black p-[2px] cursor-pointer" :style="(indiceImagemSelecionada == ind) ? 'border-width: 2px' : ''">
             <div class="image-container  w-[39px] h-[39px]">
