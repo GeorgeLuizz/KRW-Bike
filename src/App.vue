@@ -68,6 +68,7 @@
                   </div>
                 </div>
                 <CorBike />
+                <FormaPagamento />
             </div>
           </div>
 
@@ -78,6 +79,7 @@
     import Infos from './components/Infos.vue'
     import Carrossel from './components/Carrossel.vue'
     import CorBike from './components/CorBike.vue'
+    import FormaPagamento from './components/FormaPagamento.vue'
 
 
     import { ref } from 'vue';

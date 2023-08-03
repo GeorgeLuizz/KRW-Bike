@@ -1,30 +1,26 @@
 <template>
-    <div class="flex items-center justify-start space-x-32 m-4">
-    <Carousel :items-to-show="2.5" :wrap-around="true">
-        <Slide v-for="slide in images" :key="slide">
-            <div class="carousel__item">
-                <img :src="slide" />
+    <div class="flex justify-start space-x-1 items-center">
+        <div v-for="slide in images" :key="slide" class="border-[1px] border-black p-[2px]">
+            <div class="image-container  w-[39px] h-[39px]">
+                <img :src="slide.url" class="object-contain w-full h-full"/>
             </div>
-        </Slide>
-    
-        <template #addons>
-            <Navigation />
-        </template>
-    </Carousel>
+            <div class="w-[29px] h-[3px] mx-auto mb-[1px]" :style="'background-color: ' + slide.cor">
+            </div>
+            
+        </div>
     <a href="/fale-conosco" class="text-grey hover:underline text-xs">Mais Cores</a>
     </div>
 </template>
 
 <script setup>
     import { ref } from 'vue'
-    import { Carousel, Navigation, Slide } from 'vue3-carousel'
-
-    import 'vue3-carousel/dist/carousel.css'
 
     const images = ref([
-        "/vermelha.png",
-        "/rosa.png",
-        "/verde.png",
-        "/azul.png"
+        {url: "/vermelha.png", cor: "#EF593C"},
+        {url: "/azul.png", cor: "#60D0FC"},
+        {url: "/rosa.png", cor: "#DC316D"},
+        {url: "/verde.png", cor: "#818181"},
+        {url: "/cinza.png", cor: "#DFDFDF"},
+        
     ])
 </script>
