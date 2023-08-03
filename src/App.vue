@@ -48,14 +48,15 @@
         <!--Pagina-->
         <div class="flex">
             <!--Lado Esquerdo-->
-            <div class="w-1/2 px-8">
+            <div class="w-1/2 pl-60">
                 <Carrossel />
             </div>
             
             
             <!--Lado Direito-->
             <div class="w-1/2 px-8">
-                <h1 class="text-lg mb-4">{{tituloProduto}}</h1>
+                <h1 class="text-lg ">{{tituloProduto}}</h1>
+                <img class="w-[100px] mb-4" src="/stars.png">
                 <p class="text-xs">Tamanho do quadro</p>
                 <div id="quadrosBike" class="flex items-center justify-right space-x-2 mb-4">
                   <div class="border-black border-[0.5px] rounded text-xs w-8 p-1 text-center">
