@@ -7,7 +7,7 @@
 
 
         <!--Menu com Logo-->
-        <div id="logo" class="bg-white text-sm border-y-2 p-3 flex items-center justify-center">
+        <div id="logo" class="bg-white text-sm border-y-2 p-3 flex items-center justify-center space-x-12">
             <img class="w-24 h-auto" src="./assets/LOGO1.png" alt="Logo" />
         
             <div class="relative ml-4">
@@ -17,9 +17,16 @@
                 </div>
         </div>
     
-        <div class="ml-4">
-          <a href="/fale-conosco" class="text-blue-600 hover:underline">Fale Conosco</a>
-          <a href="/fale-conosco" class="text-blue-600 hover:underline">Fale Conosco</a>
+        <div class="flex space-x-5 ml-4">
+            <div class="flex flex-col justify-center items-center">
+                <img class="w-5" src="/Group 204.png">
+                <a href="/fale-conosco" class="text-blue-600 hover:underline">Fale Conosco</a>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img  class="w-5" src="/Group 205.png">
+                <a href="/fale-conosco" class="text-blue-600 hover:underline">Fale Conosco</a>
+            </div>
+
         </div>
     
         <div class="ml-4">
